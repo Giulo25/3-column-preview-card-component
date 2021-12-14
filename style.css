@@ -23,7 +23,7 @@ main {
 .card {
   max-width: 92rem;
   margin: 0 auto;
-  margin-top: 25rem;
+  margin-top: 15rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-radius: 8px;
