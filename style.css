@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: #fff;
+}
+main {
+  padding: 1.5rem;
+}
+.card {
+  max-width: 92rem;
+  margin: 0 auto;
+  margin-top: 25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.item {
+  padding: 5rem 4.5rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+img {
+  width: 6.5rem;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  mix-blend-mode: screen;
+  padding: 1.5rem 3rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 100rem;
+  width: 15rem;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
+  mix-blend-mode: normal;
+  color: hsl(0, 0%, 95%);
+}
+.btn-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.btn-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* media queries */
+/* 800px */
+@media (max-width: 50em) {
+  .item {
+    padding: 4rem 3rem 4rem 4rem;
+  }
+  .btn {
+    padding: 1.2rem 2.4rem;
+  }
+}
+/* 700px */
+@media (max-width: 50em) {
+  .item {
+    padding: 3rem 2rem 3rem 3rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+  }
+}
+/* 624px */
+@media (max-width: 50em) {
+  main {
+    padding: 2rem;
+  }
+  .card {
+    max-width: 35rem;
+    margin-top: 10rem;
+    grid-template-columns: 1fr;
+  }
+  .item {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .btn {
+    margin-top: 1rem;
+    padding: 1.4rem 2.8rem;
+  }
+  p {
+    line-height: 1.8;
+  }
+}
